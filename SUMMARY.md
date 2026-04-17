@@ -1,7 +1,11 @@
 # Table of contents
 
 * [메뉴얼 개요](README.md)
-  * [Page 1](readme/page-1.md)
+  * [시스템 개요](readme/system-overview.md)
+  * [하드웨어 구성](readme/hardware.md)
+  * [안전 수칙](readme/safety.md)
+  * [빠른 시작 가이드](readme/quick-start.md)
+  * [단계별 요약](readme/phase-summary.md)
 
 ## Phase 0: 파라미터 설정
 
