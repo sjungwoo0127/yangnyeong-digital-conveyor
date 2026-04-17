@@ -1,10 +1,10 @@
-# Phase 4: 물체 분류 (Object Classification)
+# Phase 4: 물체 분류
 
 ## 🤖 개요
 
 카메라로 물체를 인식하고, 인식 결과에 따라 적절한 분류 위치로 옮깁니다.
 
----
+***
 
 ## 🔄 동작 흐름
 
@@ -13,7 +13,7 @@
 3. 물체를 해당 분류 위치로 옮기기
 4. 홈으로 돌아가기
 
----
+***
 
 ## 🖥️ 핵심 코드
 
@@ -48,14 +48,14 @@ def phase_4():
 
 **결과**: 물체 분류 완료 → 다음 사이클 준비
 
----
+***
 
 ## 📚 상세 설명
 
-- [물체 감지 (Detection)](phase-4-1-detection.md)
-- [좌표 변환 (Pixel to Robot)](phase-4-2-coordinate-conversion.md)
-- [물체 분류 규칙](phase-4-3-classification-rules.md)
+* [물체 감지 (Detection)](phase-4-1-detection.md)
+* [좌표 변환 (Pixel to Robot)](phase-4-2-coordinate-conversion.md)
+* [물체 분류 규칙](/broken/pages/OCNB87LwpwHwZQeCP8pC)
 
----
+***
 
 **완료**: 한 사이클 종료. Phase 1부터 다시 시작됩니다.

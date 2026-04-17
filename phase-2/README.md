@@ -1,10 +1,10 @@
-# Phase 2: 컨베이어 이동 (Conveyor Movement)
+# Phase 2: 컨베이어 이동
 
 ## 🎛️ 개요
 
 로봇이 물체를 집어 컨베이어로 옮깁니다.
 
----
+***
 
 ## 🔄 동작 흐름
 
@@ -12,7 +12,7 @@
 2. 컨베이어로 이동 → 물체 놓기
 3. 컨베이어 벨트 회전
 
----
+***
 
 ## 🖥️ 핵심 코드
 
@@ -36,14 +36,14 @@ def phase_2():
     robot.sendCommand("G1 E43\n")
 ```
 
----
+***
 
 ## 📚 상세 설명
 
-- [물체 집기 (Gripper)](phase-2-1-gripper.md)
-- [컨베이어 이동](phase-2-2-movement.md)
-- [컨베이어 벨트 제어](phase-2-3-conveyor-belt.md)
+* [물체 집기 (Gripper)](phase-2-1-gripper.md)
+* [컨베이어 이동](/broken/pages/QVMXcfxxHAVssNDEyPUw)
+* [컨베이어 벨트 제어](/broken/pages/a7EeN5kqE74ABQbvwCVH)
 
----
+***
 
-**다음 단계**: [Phase 3: 스캔 위치로 이동](phase-3-scan.md)
+**다음 단계**: [Phase 3: 스캔 위치로 이동](../phase-3/)
