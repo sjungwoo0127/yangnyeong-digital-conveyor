@@ -36,7 +36,7 @@ PC 로봇의 좌표를 측정하기 위해 로봇과 PC를 연결시켜야 합�
 
 #### (1) HUENIT \[컨트롤] 탭 진입
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### (2) \[자동 연결] 버튼 클릭
 
