@@ -31,3 +31,9 @@
 * 현재의 환경에 따라서 밝기를 바꿔주면 그 환경에 맞게 적용됩니다.
 
 ***
+
+## Phase 3 실행 영상
+
+{% embed url="https://youtu.be/OE-KOZzjilU" %}
+
+***

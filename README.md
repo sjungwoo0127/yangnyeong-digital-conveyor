@@ -24,3 +24,12 @@ PC와 AI 카메라를 연결시킨 후 **\[인공지능]**&#xD0ED;에서 **\[카
 
 <figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
+***
+
+## 실행 영상
+
+{% embed url="https://youtu.be/UvT1tSBQVKk" %}
+
+***
+
+***

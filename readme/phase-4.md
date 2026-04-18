@@ -73,3 +73,9 @@
 * 현재 물체를 분류하는 위치로 가서 물체를 놓고 HOME의 x,y좌표로  안전하게 이동합니다.
 
 ***
+
+## Phase 4 실행 영상
+
+{% embed url="https://youtu.be/ifZQ_IuMOkY" %}
+
+***

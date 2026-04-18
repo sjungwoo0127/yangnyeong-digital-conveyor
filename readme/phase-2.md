@@ -51,3 +51,10 @@
 * 컨베이어를 43만큼 이동시킵니다.
 
 ***
+
+## Phase 2 실행 영상
+
+{% embed url="https://youtu.be/d0-YtaeM6kY" %}
+
+***
+
