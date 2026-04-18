@@ -52,6 +52,8 @@ x,y,z,좌표 리스트에서 각 위치에 대한 순서를 동일하게 해야�
 x,y,z,좌표 리스트에서 각 위치에 대한 순서를 동일하게 해야합니다.
 {% endhint %}
 
+<figure><img src="../.gitbook/assets/IMG_8152.jpeg" alt=""><figcaption></figcaption></figure>
+
 ## 6. 기본 z좌표
 
 기본 z좌표를 설정합니다.

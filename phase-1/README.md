@@ -41,7 +41,7 @@
 - 버튼값: 0 이 의미하는 것은 버튼을 눌렀을 때를 의미합니다.
 {% endhint %}
 
-### 세 번 반복 블
+### 세 번 반복 블럭&#x20;
 
 <div align="left"><figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure></div>
 
