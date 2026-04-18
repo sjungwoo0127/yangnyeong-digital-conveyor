@@ -1,52 +1,45 @@
+---
+description: 원하는 위치의 좌표를 측정하여 각 변수에 저장하기 위한 상세 가이드 입니다. 로봇의 좌표 측정 방법은 다음장에서 확인할 수 있습니다.
+---
+
 # 변수 상세 가이드
 
-## 블록 다이어그램
+블록 다이어그램
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-## 로봇의 좌표 측정 방법
+## 1. 홈 좌표
 
+아래의 사진처럼 전체 동작을 실행하기 전의 홈 좌표를 설정합니다.
 
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-### 1. AI 카메라를 통한 측정
+## 2. 집기 좌표
 
-{% hint style="info" %}
-AI 카메라로 로봇의 좌표를 측정하기 위해 로봇과 AI 카메라를 연결시켜야 합니다.
+컨베이어로 옮길 각 물체의 좌표를 설정합니다.
+
+{% hint style="warning" %}
+샘플 코드에서 현재 각 물체의 x,z좌표가 동일하기에 한 개의 변수에 모두 저장되어 있습니다.
 {% endhint %}
 
-#### (1) \[로봇 조작] 메뉴 진입
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (14).png" alt="" width="563"><figcaption></figcaption></figure>
+## 3. 물체 높이
 
-#### (2) \[티치&플레이] 진입&#x20;
+컨베이어 위에서 집을 물체의 z좌표를 설정합니다.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
-
-#### (3) \[추가] 버튼 클릭
-
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-#### (4) 좌표 측
-
-**Step 1** : 로봇 팔 가운데의 버튼을 눌러 로봇 팔의 모터를 끕니다.(로봇 팔이 자유롭게 이동 가능한 상태가 됩니다.)
-
-**Step** **2** : 원하는 위치로 로봇 팔을 이동시킨 후, 다시 가운데 버튼을 눌러 모터를 켭니다.(로봇 팔이 고정됩니다.)
-
-**Step 3** : AI 카메라의 화면에 나오는 좌표를 확인합니다.
-
-***
-
-### 2. PC를 통한 측정
-
-{% hint style="info" %}
-PC 로봇의 좌표를 측정하기 위해 로봇과 PC를 연결시켜야 합니다.
+{% hint style="warning" %}
+* 로봇 팔에 석션 모듈을 장착시킨 후, 컨베이어에 물체를 올리고 그 위에 로봇팔을 올려 z값을 측정합니다.
+* 좌표값이 너무 낮으면 동작중 석션 모듈이 분리될 수 있습니다.
+* 좌표값이 너무 높으면 동작중 물체를 제대로 집지 못할 수 있습니다.
 {% endhint %}
 
-#### (1) HUENIT \[컨트롤] 탭 진입
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-#### (2) \[자동 연결] 버튼 클릭
+## 4. 컨베이어 높이/대기
 
-#### (3) 좌표 측정
+## 5. 분류 좌표
 
+## 6. 기본 z좌표
