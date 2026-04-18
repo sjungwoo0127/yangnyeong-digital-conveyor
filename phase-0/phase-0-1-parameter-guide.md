@@ -6,7 +6,7 @@ description: 원하는 위치의 좌표를 측정하여 각 변수에 저장하�
 
 #### 블럭 다이어그램
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

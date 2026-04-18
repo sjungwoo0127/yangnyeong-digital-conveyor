@@ -8,7 +8,7 @@
 
 ## Phase 1. 전체 블럭 설명&#x20;
 
-<div align="left"><figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * 최초 실행에서 로봇이 HOME 좌표로 이동 후, 버튼을 누르지 않고 있는다면 계속 그 자리에 가만히 있습니다.
 * 버튼을 누르면, phase2부터 4까지의 동작이 세 번 실행됩니다.
@@ -26,13 +26,13 @@
 
 ### 로봇 움직이기
 
-<div align="left"><figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure></div>
 
 * 이 블럭은 로봇의 위치를 변수 HOME에 저장된 위치 움직이는 블럭입니다.
 
 ### 버튼 값 읽어오기&#x20;
 
-<div align="left"><figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 * 이 블럭은 버튼값이 0이면 이 다음 블록을 실행하고 0이 아니라면 계속 반복 블럭의 내용을 반복합니다.
 
@@ -43,7 +43,7 @@
 
 ### 세 번 반복 블럭&#x20;
 
-<div align="left"><figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 * i 값이 0일때 한번, 1일때 한번, 2일때 한번 진행되며 각 진행이 끝났을때 i에 1을 더합니다.
 * phase 2부터 4까지의 동작이 총 세 번 반복합니다.
