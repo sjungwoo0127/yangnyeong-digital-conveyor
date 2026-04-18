@@ -20,36 +20,56 @@
 * 변환 좌표 리스트에 저장된 x, y값을 각각 변수: 변환 x좌표, 변환 y좌표 에 저장합니다.
 * 해당 x,y좌표와 기본 z좌표로 이동한 후, z좌표를 물체의 위치에 맞춰 해당 물체를 집어올린 후, 다시 z좌표를 올려 이동할 준비를 합니다.
 * result에 저장되어 있던 해당 물체의 id값을 변수 tag\_id 에 저장시킵니다.
-* 해당 id에 해당하는 좌표값을 변수 분류 좌표 목록 에서 가져와 각 x,y,z값에 저장 시킵니다.
-* 분류하는 위치로 가 물체를 놓고 HOME의 x,y좌표로  안전하게 이동합니다.
+* 해당 id에 해당하는 좌표값을 변수 분류 좌표 목록 에서 가져와 각 x,y,z값에 저장시킵니다.
+* 현재 물체를 분류하는 위치로 가서 물체를 놓고 HOME의 x,y좌표로  안전하게 이동합니다.
 
 ***
 
 ## 블럭별 설명
 
-### 각 집기(x,y,z)좌표에 해당하는 좌표 할당&#x20;
+### 물체 인식&#x20;
 
-* 이 집기 좌표 목록에서 i번째 에 해당하는 좌표를 각 (x,y,z) 좌표에 할당합니다.
+<div align="left"><figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure></div>
 
-### 물체 집어 올리기&#x20;
+* 물체가 인식 될 때 까지 스캔합니다.&#x20;
+* 물체가 인식되면 변수 result에 그 물체의 중심 (x,y)좌표, 해당 물체의 id값을 리스트로 반환합니다.
+
+{% hint style="info" %}
+속도를 선택하면 빠르게 인식되는 반면, 정확도를 선택하면 속도는 느리지만 현재 물체가 해당하는 위치를 더 정확하게 인식할 수 있습니다.
+{% endhint %}
+
+
+
+### 인식한 물체를 실제 좌표로 변환하기&#x20;
 
 <div align="left"><figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure></div>
+* 변수 : 변환 좌표 리스트에 result에서 반환된 (x,y)좌표를 실제 로봇이 움직일 좌표로 변환해 리스트로 저장합니다.&#x20;
+* 실좌표로 변환 블럭은 왼쪽에는 카메라에서의 좌표(2차원 좌표), 오른쪽에는 물체의 높이를 넣습니다.&#x20;
+* 실좌표로 변환 블럭에서는 물체가 카메라의 가운데에 올 때 까지 움직이다 카메라의 가운데에 물체가 포착되면 해당 좌표(3차원 좌표: 로봇이 움직이는 좌표)중 x,y좌표를 리스트로 반환합니다.
+* 변환 좌표 리스트에 저장된 x, y값을 각각 변수: 변환 x좌표, 변환 y좌표 에 저장합니다.
 
-* 물체를 집으러 가기전 물체의 좌표에 x,y좌표를 맞춥니다. (바로 물체를 집으러 가면 로봇이 물체를 쳐, 물체가 안전하지 않을 수 있습니다.)
-* z좌표를 내려 물체에 맞춘 후 석션 모듈을 켜서 물체를 잡고, 다시 z좌표를 올려 물체를 이동시키기 위한 준비를 합니다.
+### 컨베이어에서 로봇 집기&#x20;
 
-### 컨베이어에 물체 내려놓기
+<div align="left"><figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure></div>
+* 컨베이어해당 x,y좌표와 기본 z좌표로 이동한 후, z좌표를 물체의 위치에 맞춰 해당 물체를 집어올린 후, 다시 z좌표를 올려 이동할 준비를 합니다.
 
-* 물체를 컨베이어\_대기 -> 컨베이어\_놓기 좌표로 이동하여 석션을 끄고 다시 컨베이어\_대기 위치로 이동합니다.
+### 현재 물체에 해당하는 위치로 좌표값 설정
 
-### 컨베이어 움직이기&#x20;
+<div align="left"><figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure></div>
+* result에 저장되어 있던 해당 물체의 id값을 변수 tag\_id 에 저장시킵니다.
+* 해당 id에 해당하는 좌표값을 변수 분류 좌표 목록 에서 가져와 각 x,y,z값에 저장시킵니다.
 
-* 컨베이어를 43만큼 이동시킵니다.
+{% hint style="info" %}
+리스트는 0번부터 시작, AI카메라로 인식한 태그의 id는 1번부터 시작하기 때문에 둘의 번호를 맞추고 싶다면 id에서 1을 빼줘야 합니다.
+{% endhint %}
+
+### 물체 분류&#x20;
+
+<div align="left"><figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure></div>
+
+* 현재 물체를 분류하는 위치로 가서 물체를 놓고 HOME의 x,y좌표로  안전하게 이동합니다.
 
 ***
