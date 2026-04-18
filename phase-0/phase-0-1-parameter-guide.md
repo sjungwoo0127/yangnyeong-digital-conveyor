@@ -21,7 +21,7 @@ description: 원하는 위치의 좌표를 측정하여 각 변수에 저장하�
 컨베이어로 옮길 각 물체의 좌표를 설정합니다.
 
 {% hint style="warning" %}
-샘플 코드에서 현재 각 물체의 x,z좌표가 동일하기에 한 개의 변수에 모두 저장되어 있습니다.
+x,y,z,좌표 리스트에서 각 위치에 대한 순서를 동일하게 해야합니다.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
@@ -38,7 +38,11 @@ description: 원하는 위치의 좌표를 측정하여 각 변수에 저장하�
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-## 4. 컨베이어 높이/대기
+## 4. 컨베이어 놓/대기
+
+물체를 놓을 컨베이어 위의 좌표 및 컨베이어가 움직이는 동안 로봇 팔이 대기하고 있을 위치의 좌표를 설정합니다.
+
+<div><figure><img src="../.gitbook/assets/IMG_8150.jpeg" alt=""><figcaption><p>[컨베이어 놓기] 위치</p></figcaption></figure> <figure><img src="../.gitbook/assets/IMG_8151.jpeg" alt=""><figcaption><p>[컨베이어 대기] 위치</p></figcaption></figure></div>
 
 ## 5. 분류 좌표
 
