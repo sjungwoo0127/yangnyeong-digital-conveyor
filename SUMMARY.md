@@ -1,8 +1,8 @@
 # Table of contents
 
 * [HUENIT 컨베이어](README.md)
-  * [Phase 0: 파라미터 설정](phase-0/README.md)
-    * [파라미터 상세 가이드](phase-0/phase-0-1-parameter-guide.md)
+  * [Phase 0: 변수 설정](phase-0/README.md)
+    * [변수 상세 가이드](phase-0/phase-0-1-parameter-guide.md)
   * [Phase 1: 홈](phase-1/README.md)
     * [홈 위치 상세](phase-1/phase-1-1-home-position.md)
   * [Phase 2: 컨베이어 이동](phase-2/README.md)
