@@ -4,9 +4,9 @@ description: 원하는 위치의 좌표를 측정하여 각 변수에 저장하�
 
 # 변수 상세 가이드
 
-블록 다이어그램
+#### 블록 다이어그램
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

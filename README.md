@@ -22,5 +22,5 @@
 
 PC와 AI 카메라를 연결시킨 후 **\[인공지능]**&#xD0ED;에서 **\[카메라 직접 학습 모델]**&#xC744; 눌러 학습시킨 **태그 인식** 모델을 불러와야 합니다.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
